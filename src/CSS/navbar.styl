@@ -1,0 +1,69 @@
+// Navbar Section
+
+// Main Navbar
+.navbar__main 
+    background: #DDD;
+    display flex
+    justify-content: center
+    align-items center
+    flex-wrap wrap
+    width 100%
+// Navbar Links
+.navbar__link
+    padding 40px
+    font-size 1.2rem
+    text-decoration: none
+    font-family: 'Bebas', Arial, Helvetica, sans-serif
+    font-weight: 500
+    color #222
+    position: relative
+    display grid
+    place-items: center
+    &:hover
+        color #555   
+        > span 
+            width 100%
+            height 5px
+            position absolute
+            bottom 0
+            left 0
+            right 0
+.logo
+    display grid
+    place-items center
+    width 100%
+    height auto
+.logo__wrap
+    display grid
+    place-items center
+    width 100px
+    height 100%
+// Navbar Sections
+.navbar__section-1
+    display flex
+    margin-right auto
+    background darken(#ba0101, 30%)
+    > a
+        color #DDD
+        transition .5s ease-in
+        &:hover
+            color #FFF
+            transition .5s ease-in
+            > span 
+                background rgba(#EEE, .8)
+.navbar__section-2
+    display flex
+    margin-left auto
+    background #CCC
+    > a
+        color #222
+        transition .5s ease-in
+        &:hover
+            color #555
+            transition .5s ease-in
+            > span 
+                background rgba(#ba0101, .8)
+                
+@media screen and (max-width: 968px)
+    .navbar__link
+        flex 1 100%
