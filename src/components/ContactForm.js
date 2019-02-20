@@ -1,5 +1,7 @@
 import React from "react";
 import styles from "../CSS/contact.styl";
+
+
 const ContactForm = function() {
   return (
     <div className={styles["contact"]}>

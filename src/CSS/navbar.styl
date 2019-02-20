@@ -2,9 +2,9 @@
 
 // Main Navbar
 .navbar__main 
-    background: #DDD;
+    background #DDD;
     display flex
-    justify-content: center
+    justify-content center
     align-items center
     flex-wrap wrap
     width 100%
@@ -12,13 +12,13 @@
 .navbar__link
     padding 40px
     font-size 1.2rem
-    text-decoration: none
-    font-family: 'Bebas', Arial, Helvetica, sans-serif
-    font-weight: 500
+    text-decoration none
+    font-family 'Bebas', Arial, Helvetica, sans-serif
+    font-weight 500
     color #222
-    position: relative
+    position relative
     display grid
-    place-items: center
+    place-items center
     &:hover
         color #555   
         > span 
@@ -63,7 +63,70 @@
             transition .5s ease-in
             > span 
                 background rgba(#ba0101, .8)
-                
-@media screen and (max-width: 968px)
+// Mobile 
+.navbar__main-mobile
+    display flex
+    align-items center
+    flex-wrap wrap
+    box-shadow: 0px 0px 20px rgba(#000, .5)
+    height 100px
+    background darken(#ba0101, 30%)
+    z-index: 999
+.navbar__collapse-btn
+    order 2
+    margin-left auto
+    margin-top 10px
+    margin-right 10px
+    width 50px
+    height 50px
+    border-radius 10px
+    padding 15px
+    display grid 
+    place-items center
+    cursor pointer
+    &:hover
+        opacity .5
+    > span 
+        background #f4f4f4
+        width 100%
+        height 3px
+        margin-bottom 2px   
+        display block 
+.navbar__wrap
+    order 2
+    flex-basis 100%
+    display flex
+    flex-wrap wrap
+    margin-top 20px
+    // background #DDD
+    height 100%
+    transition all .5s ease-in
+    overflow hidden
+    z-index 999
+    display none
+.navbar__wrap.active
+    display flex
+    transition all .2s ease-in
+.active 
+    background lighten(#8c0b00, 20%) !important
+    transition all .5s ease-in
+    transform: translateX(0px)
+    height 100% !important
+
+.navbar__link-mobile
+    flex 1 100%
+    padding 20px
+    font-family Bebas, Arial, Helvetica, sans-serif
+    cursor pointer
+    font-size 1.5rem
+    color #EEE
+    &:hover
+        background #f4f4f4
+        color #444
+.navbar__mobile-img
+    flex-basis: 20%
+    img 
+        width 100px
+@media screen and (max-width 968px)
     .navbar__link
         flex 1 100%
