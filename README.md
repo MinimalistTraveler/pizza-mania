@@ -1,2 +1,2 @@
-# pizza_mania
+# Pizza Mania
 A single page pizza application. Currently in development.
