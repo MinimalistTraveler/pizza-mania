@@ -1,13 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "../CSS/contact.styl";
 
-
-const ContactForm = function() {
+const ContactForm = () => {
+  const [state, setState] = useState({
+    fName: "",
+    lName: "",
+    message: ""
+  });
   return (
     <div className={styles["contact"]}>
       <div className={styles["form"]}>
         <form className={styles["form__main"]}>
-          <h1>Chat With Us</h1>
           <div className={styles["form__input-wrap"]}>
             <label htmlFor="first_name">First Name</label>
             <input type="text" />
