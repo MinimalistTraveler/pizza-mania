@@ -24,13 +24,13 @@ class Navbar extends Component {
             <nav
               className={classnames({
                 [styles["navbar__main-mobile"]]: true,
-                [styles["active"]]: this.state.active
+                [styles["active"]]: active
               })}
             >
               <a
                 className={classnames({
                   [styles["navbar__collapse-btn"]]: true,
-                  [styles["active"]]: this.state.active
+                  [styles["active"]]: active
                 })}
                 onClick={this.toggleNav}
               >
@@ -44,7 +44,7 @@ class Navbar extends Component {
               <div
                 className={classnames({
                   [styles["navbar__wrap"]]: true,
-                  [styles["active"]]: this.state.active
+                  [styles["active"]]: active
                 })}
               >
                 <a className={styles["navbar__link-mobile"]}>Home</a>
