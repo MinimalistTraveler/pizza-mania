@@ -1,8 +1,12 @@
 import React, { Component } from "react";
+
 // Components
-import ContactForm from "./ContactForm";
 import SlideShow from "./SlideShow";
 import About from "./About";
+import Menu from "./Menu";
+import ContactForm from "./ContactForm";
+
+// Styles (Effects The Entire Page.)
 import styles from "../CSS/mainpage.styl";
 
 class MainPage extends Component {
@@ -11,6 +15,7 @@ class MainPage extends Component {
       <div className={styles["main__page"]}>
         <SlideShow />
         <About />
+        <Menu />
         <ContactForm />
       </div>
     );
