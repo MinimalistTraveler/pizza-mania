@@ -3,6 +3,7 @@ A single page pizza application.
 
 ### Update
 - Version 1.0 is Officially Released!
+- 1.0.1 is released! Minor bug fixes and style tweaks
 
 #### BETA RELEASE IS NOW AVALIABLE
 
