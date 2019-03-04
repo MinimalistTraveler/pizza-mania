@@ -1,5 +1,8 @@
 # Pizza Mania
-A single page pizza application. Currently in development.
+A single page pizza application. Currently in development. 
+
+### Update
+- Version 1.0 is Officially Released!
 
 #### BETA RELEASE IS NOW AVALIABLE
 
