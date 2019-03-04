@@ -6,6 +6,7 @@
     color #f4f4f4
     font-family: "Bebas", Arial, Helvetica, sans-serif
     overflow hidden
+    z-index 999
 .footer__flex
     display flex
     justify-content: center
@@ -32,6 +33,13 @@
         li 
             list-style: none
             line-height: 1.5em
+            padding 5px
+            font-family: "Bebas", Arial, Helvetica, sans-serif
+            > a 
+                color #dddddd
+                text-decoration: none
+                &:hover
+                    color #222
 .footer__copy
     flex 1 100%
     font-family: "Open-Sans", Arial, Helvetica, sans-serif

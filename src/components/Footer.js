@@ -12,10 +12,18 @@ const Footer = function Footer() {
         <div className={styles["footer__section"]}>
           <h3>Main Menu</h3>
           <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Menu</li>
-            <li>Contact</li>
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#about"> About</a>
+            </li>
+            <li>
+              <a href="#menu"> Menu</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
           </ul>
         </div>
         <div className={styles["footer__section"]}>
