@@ -9,8 +9,8 @@ class Navbar extends Component {
       active: false
     };
   }
+  // Toggles the menu (mobile devices only.)
   toggleNav = () => {
-    console.log("Test");
     this.setState({
       active: !this.state.active
     });
@@ -21,6 +21,7 @@ class Navbar extends Component {
       <Media query="(max-width: 968px)">
         {matches =>
           matches ? (
+            // Mobile Navigation
             <nav
               className={classnames({
                 [styles["navbar__main-mobile"]]: true,
@@ -47,20 +48,29 @@ class Navbar extends Component {
                   [styles["active"]]: active
                 })}
               >
-                <a className={styles["navbar__link-mobile"]}>Home</a>
-                <a className={styles["navbar__link-mobile"]}>About</a>
-                <a className={styles["navbar__link-mobile"]}>Menu</a>
-                <a className={styles["navbar__link-mobile"]}>Contact</a>
+                <a className={styles["navbar__link-mobile"]} href="#">
+                  Home
+                </a>
+                <a className={styles["navbar__link-mobile"]} href="#about">
+                  About
+                </a>
+                <a className={styles["navbar__link-mobile"]} href="#menu">
+                  Menu
+                </a>
+                <a className={styles["navbar__link-mobile"]} href="#contact">
+                  Contact
+                </a>
               </div>
             </nav>
           ) : (
+            // Desktop Navigation
             <nav className={styles["navbar__main"]}>
               <div className={styles["navbar__section-1"]}>
                 <a href="#" className={styles["navbar__link"]}>
                   Home
                   <span />
                 </a>
-                <a href="#" className={styles["navbar__link"]}>
+                <a href="#about" className={styles["navbar__link"]}>
                   About
                   <span />
                 </a>
@@ -73,11 +83,11 @@ class Navbar extends Component {
                 />
               </div>
               <div className={styles["navbar__section-2"]}>
-                <a href="#" className={styles["navbar__link"]}>
+                <a href="#menu" className={styles["navbar__link"]}>
                   Menu
                   <span />
                 </a>
-                <a href="#" className={styles["navbar__link"]}>
+                <a href="#contact" className={styles["navbar__link"]}>
                   Contact
                   <span />
                 </a>

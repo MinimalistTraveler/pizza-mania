@@ -1,21 +1,25 @@
 // SlideShow
-
-.slider
-    display block
-    overflow hidden
-    width 100%
-    max-height 100vh
+.slide 
     position relative
-.slider__img
-    display block 
-    width 100%
-    height auto
-.title__card
-    position absolute
-    top 0
-.slider__slide
-    position: relative
-    width 100%
+    > div:nth-child(1)
+        position relative !important  // Do not remove the important flag this prevents the slideshow from overlapping.
+        z-index -1 
+// .slider
+//     display block
+//     overflow hidden
+//     width 100%
+//     max-height 100vh
+//     position relative
+// .slider__img
+//     display block 
+//     width 100%
+//     height auto
+// .title__card
+//     position absolute
+//     top 0
+// .slider__slide
+//     position: relative
+//     width 100%
 .slider__header
     position absolute
     z-index: 1
@@ -23,9 +27,12 @@
     padding 10px
     background rgba(#000, .7)
     width 100%
+    > div 
+        position absolute 
+        top 0    
     h1 
-        font-size 5rem
-        font-family: "Bebas", Arial, Helvetica, sans-serif
+        font-size 3.5rem
+        font-family: "Bebas", Arial, Helvetica, sans-serif 
         text-shadow: 3px 3px 10px rgba(#000, .5)
         span 
             display block

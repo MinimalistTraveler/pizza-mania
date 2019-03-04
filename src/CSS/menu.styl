@@ -1,6 +1,6 @@
 .menu
     height 100vh
-    background #444
+    background #222
     border-top 1px solid #CCC
     border-bottom 1px solid #CCC
     color #DDD
@@ -35,7 +35,7 @@
         list-style none
         font-weight 300
         font-family "Open Sans", Arial, Helvetica, sans-serif
-        font-size 1.5rem
+        font-size 1.2rem
         padding 10px
         text-shadow 2px 2px 10px rgba(#000, .5)
         display flex
@@ -44,8 +44,7 @@
         > div
             display block
             height 2px 
-            width 100%
-            border-bottom 2px dotted #ddd
+            width 50%
             text-align center
             padding 10px
             margin 10px
@@ -80,6 +79,9 @@
         &:hover
             background #d1d1d1
             color #222
+.active
+    background #d1d1d1 !important
+    color #222 !important
 .menu__img
     position absolute
     top 0 
@@ -96,6 +98,7 @@
 @media screen and (max-width 968px)
     .menu
         z-index -999
+        height 100%
     .menu__main
         flex 100%
         z-index: 1

@@ -4,6 +4,7 @@ import MainPage from "./MainPage";
 import Footer from "./Footer";
 
 const App = class App extends Component {
+  // Main
   render() {
     return (
       <div>

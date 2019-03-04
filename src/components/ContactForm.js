@@ -2,13 +2,14 @@ import React, { useState } from "react";
 import styles from "../CSS/contact.styl";
 
 const ContactForm = () => {
+  // States
   const [state, setState] = useState({
     fName: "",
     lName: "",
     message: ""
   });
   return (
-    <div className={styles["contact"]}>
+    <div className={styles["contact"]} id="contact">
       <div className={styles["form"]}>
         <form className={styles["form__main"]}>
           <h1>Contact Us</h1>

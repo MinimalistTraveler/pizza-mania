@@ -1,51 +1,49 @@
 [{
-        "name": "Large Cheese Pizza",
-        "price": 15.00,
-        "discount": true,
+        "name": "Cheese Pizza",
+        "price": 9.00,
+        "discount": false,
         "pizza": true
     },
     {
-        "name": "Large Cheese With Toppings",
-        "price": 15.00,
-        "discount": true,
-        "pizza": true
-    },
-    {
-        "name": "Large Pepparoni Pizza",
+        "name": "Pepparoni Pizza",
         "price": 12.00,
-        "discount": true,
+        "discount": false,
         "pizza": true
     },
     {
-        "name": "Large Hamburger Pizza",
+        "name": "Hamburger Pizza",
         "price": 15.00,
         "discount": true,
         "pizza": true
     },
     {
-        "name": "Large Vegan Pizza",
+        "name": "Vegan Pizza",
         "price": 20.00,
         "discount": true,
         "pizza": true
     },
     {
         "name": "Garlic Bread",
-        "price": 3.99,
-        "discount": false
+        "price": 3.00,
+        "discount": false,
+        "pizza": false
     },
     {
         "name": "Cheese Bread",
-        "price": 4.99,
-        "discount": false
+        "price": 4.00,
+        "discount": false,
+        "pizza": false
     },
     {
         "name": "Cheese Rolls",
-        "price": 5.99,
-        "discount": false
+        "price": 5.00,
+        "discount": false,
+        "pizza": false
     },
     {
         "name": "Garlic Rolls",
-        "price": 5.99,
-        "discount": false
+        "price": 5.00,
+        "discount": false,
+        "pizza": false
     }
 ]
