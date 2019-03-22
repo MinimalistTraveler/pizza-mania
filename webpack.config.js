@@ -1,6 +1,6 @@
 const ExtractCssChunks = require("extract-css-chunks-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-// const CopyWebpackPlugin = require("copy-webpack-plugin");
+const CopyWebpackPlugin = require("copy-webpack-plugin");
 const path = require("path");
 module.exports = {
   entry: "./src/index.js",
@@ -21,7 +21,7 @@ module.exports = {
         use: {
           loader: "babel-loader",
           options: {
-            presets: ["@babel/preset-env","@babel/preset-react"],
+            presets: ["@babel/preset-env", "@babel/preset-react"],
             plugins: ["@babel/plugin-proposal-class-properties"]
           }
         }
@@ -74,12 +74,12 @@ module.exports = {
       reloadAll: true,
       cssModules: true
     }),
-    // new CopyWebpackPlugin([
-    //   {
-    //     from: "./public/",
-    //     to: "./public/[name].[ext]"
-    //   }
-    // ]),
+    new CopyWebpackPlugin([
+      {
+        from: "./public/",
+        to: "./public/[name].[ext]"
+      }
+    ]),
     new HtmlWebpackPlugin({
       minify: true,
       title: "React App",
