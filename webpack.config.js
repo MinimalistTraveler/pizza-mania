@@ -7,7 +7,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "build"),
     filename: "JS/[name].bundle.js",
-    publicPath: "/"
+    publicPath: "./"
   },
   devServer: {
     inline: true,
@@ -32,7 +32,7 @@ module.exports = {
           {
             loader: "file-loader",
             options: {
-              outputPath: "./public/fonts"
+              outputPath: "../public/fonts"
             }
           }
         ]
@@ -76,8 +76,9 @@ module.exports = {
     }),
     new CopyWebpackPlugin([
       {
-        from: "./public/",
-        to: "./public/[name].[ext]"
+        from: "./public/images",
+
+        to: "./public/images/[name].[ext]"
       }
     ]),
     new HtmlWebpackPlugin({
