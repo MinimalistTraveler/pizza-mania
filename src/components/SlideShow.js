@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import styles from "../CSS/slideshow.styl";
 import SlideShower from "react-slidez";
+// SlideShow Class Component
 class SlideShow extends Component {
   constructor() {
     super();
@@ -9,14 +10,18 @@ class SlideShow extends Component {
       slideShowIntervalId: null
     };
   }
+  // As soon as the slideshow is mounted create the interval state.
   componentDidMount() {
-    let slideShowIntervalId = setInterval(this.slideShowInterval, 7000);
+    // This timer is for the headers ONLY not the images.
+    let slideShowIntervalId = setInterval(this.slideShowInterval, 10000);
     this.setState({ slideShowIntervalId });
   }
+  // IF the component unmounts remove the interval function
+  // This prevents unnecessary lag.
   componentWillUnmount() {
     clearInterval(this.state.slideShowIntervalId);
   }
-
+  // This function sets the interval for the header timer ONlY.
   slideShowInterval = () => {
     const { i } = this.state;
     if (i >= 3) {
@@ -67,7 +72,9 @@ class SlideShow extends Component {
       }
     }
   };
-
+  /* The SlideShower Component renders the image slideshow
+ Note: The slideInterval option creates the interval timer for the IMAGES
+ Do not confuse that interval timer with the header timer. */
   render() {
     return (
       <div className={styles["slide"]}>
@@ -80,7 +87,7 @@ class SlideShow extends Component {
           effect={"fade"}
           height={"100vh"}
           width={"100%"}
-          slideInterval={7000}
+          slideInterval={10000}
           showArrows={false}
         />
         <div className={styles["slider__header"]}>{this.renderHeader()}</div>
