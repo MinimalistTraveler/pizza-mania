@@ -7,8 +7,7 @@
   "license": "MIT",
   "scripts": {
     "start": "webpack-dev-server --mode development --open --hot",
-    "build": "webpack --mode production",
-    "deploy": "gh-pages -d build"
+    "build": "webpack --mode production"
   },
   "homepage": "https://erikbridges.github.io/pizza-mania",
   "dependencies": {
