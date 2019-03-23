@@ -62,7 +62,7 @@ export default function Menu() {
         <div className={styles["menu__header"]}>
           <img
             className={styles["menu__img"]}
-            src="../../public/images/menu_image.jpeg"
+            src="./public/images/menu_image.jpeg"
           />
           <h1>{pizza ? "Pizza" : "Sides"}</h1>
         </div>

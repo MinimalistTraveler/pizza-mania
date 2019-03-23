@@ -41,8 +41,10 @@ module.exports = {
         test: /\.(jpe?g|png|gif|svg)$/,
         use: [
           {
-            loader: "url-loader",
-            options: { limit: 10000 }
+            loader: "file-loader",
+            options: {
+              outputPath: "./public/images/"
+            }
           }
         ]
       },
