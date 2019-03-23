@@ -41,10 +41,8 @@ module.exports = {
         test: /\.(jpe?g|png|gif|svg)$/,
         use: [
           {
-            loader: "file-loader",
-            options: {
-              publicPath: "../public/images"
-            }
+            loader: "url-loader",
+            options: { limit: 10000 }
           }
         ]
       },
@@ -68,9 +66,9 @@ module.exports = {
   plugins: [
     new CopyWebpackPlugin([
       {
-        from: "./public/",
+        from: "./public",
 
-        to: "./public/[path]/[name].[ext]"
+        to: "public/[path]/[name].[ext]"
       }
     ]),
     new ExtractCssChunks({
