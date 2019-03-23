@@ -34,13 +34,13 @@ const Footer = function Footer() {
           <h3>Follow Us</h3>
           <ul className={styles["footer__social"]}>
             <li className={styles["footer__social-icons"]}>
-              <img src="../public/images/facebook.png" alt="Facebook" />
+              <img src="./public/images/facebook.png" alt="Facebook" />
             </li>
             <li className={styles["footer__social-icons"]}>
-              <img src="../public/images/twitter.png" alt="Twitter" />
+              <img src="./public/images/twitter.png" alt="Twitter" />
             </li>
             <li className={styles["footer__social-icons"]}>
-              <img src="../public/images/instagram.png" alt="Instagram" />
+              <img src="./public/images/instagram.png" alt="Instagram" />
             </li>
           </ul>
         </div>

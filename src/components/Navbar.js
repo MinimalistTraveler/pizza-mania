@@ -78,7 +78,7 @@ class Navbar extends Component {
               <div className={styles["logo__wrap"]}>
                 <img
                   className={styles["logo"]}
-                  src="../../public/images/pizza.png"
+                  src="./public/images/pizza.png"
                   alt="Pizza"
                 />
               </div>

@@ -11,7 +11,7 @@ function About() {
           matches ? (
             <div className={styles["about-mobile"]}>
               <div className={styles["about__wrap-mobile"]}>
-                <img src="../public/images/about_cover.jpg" alt="About cover" />
+                <img src="./public/images/about_cover.jpg" alt="About cover" />
               </div>
               <div className={styles["about__content-mobile"]}>
                 <h1>Delivering Pizza The Right Way</h1>
@@ -39,7 +39,7 @@ function About() {
               <div className={styles["about__wrap"]}>
                 <img
                   className={styles["about__img"]}
-                  src="../public/images/about_cover.jpg"
+                  src="./public/images/about_cover.jpg"
                 />
               </div>
               <div className={styles["about__wrap-content"]}>
