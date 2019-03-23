@@ -41,7 +41,6 @@ export default function Menu() {
   // Renders all the items based off of the type of menu. (Rather it is pizza menu or sides menu)
   const renderData = () => {
     const menuRender = data.filter(data => data.pizza === pizza);
-    console.log(menuRender);
     return menuRender.map((data, index) => (
       <li key={index}>
         {data.name}: <div /> <span>{priceCal(data.price).toFixed(2)}</span>

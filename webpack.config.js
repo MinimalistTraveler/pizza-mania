@@ -30,7 +30,10 @@ module.exports = {
         test: /\.(woff|woff2|eot|ttf)$/,
         use: [
           {
-            loader: "file-loader?name=[path]/[name].[ext]"
+            loader: "file-loader",
+            options: {
+              publicPath: "../public/fonts/"
+            }
           }
         ]
       },
@@ -38,7 +41,10 @@ module.exports = {
         test: /\.(jpe?g|png|gif|svg)$/,
         use: [
           {
-            loader: "file-loader?name=[path]/[name].[ext]"
+            loader: "file-loader",
+            options: {
+              publicPath: "../public/images"
+            }
           }
         ]
       },
@@ -68,9 +74,8 @@ module.exports = {
       }
     ]),
     new ExtractCssChunks({
-      filename: "./CSS/[name].css",
+      filename: "CSS/[name].css",
       hot: true,
-      orderWarning: true,
       reloadAll: true,
       cssModules: true
     }),
