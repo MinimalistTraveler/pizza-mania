@@ -80,9 +80,9 @@ class SlideShow extends Component {
       <div className={styles["slide"]}>
         <SlideShower
           slides={[
-            "../../public/images/slide_1.jpg",
-            "../../public/images/slide_2.jpg",
-            "../../public/images/slide_3.jpg"
+            "../public/images/slide_1.jpg",
+            "../public/images/slide_2.jpg",
+            "../public/images/slide_3.jpg"
           ]}
           effect={"fade"}
           height={"100vh"}
