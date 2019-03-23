@@ -30,23 +30,16 @@ module.exports = {
         test: /\.(woff|woff2|eot|ttf)$/,
         use: [
           {
-            loader: "file-loader",
-            options: {
-              outputPath: "../public/fonts"
-            }
+            loader: "file-loader?name=[path]/[name].[ext]"
           }
         ]
       },
       {
-        test: /\.(jpe?g|png|gif|svg)$/i,
+        test: /\.(jpe?g|png|gif|svg)$/,
         use: [
           {
-            loader: "file-loader",
-            options: {
-              outputPath: "./public/images"
-            }
-          },
-          "img-loader"
+            loader: "file-loader?name=[path]/[name].[ext]"
+          }
         ]
       },
       {
@@ -67,20 +60,20 @@ module.exports = {
     ]
   },
   plugins: [
+    new CopyWebpackPlugin([
+      {
+        from: "./public/",
+
+        to: "./public/[path]/[name].[ext]"
+      }
+    ]),
     new ExtractCssChunks({
-      filename: "CSS/[name].css",
+      filename: "./CSS/[name].css",
       hot: true,
       orderWarning: true,
       reloadAll: true,
       cssModules: true
     }),
-    new CopyWebpackPlugin([
-      {
-        from: "./public/images",
-
-        to: "./public/images/[name].[ext]"
-      }
-    ]),
     new HtmlWebpackPlugin({
       minify: true,
       title: "React App",
