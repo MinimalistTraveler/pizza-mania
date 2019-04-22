@@ -8,7 +8,7 @@ A single page pizza template. Feel free to fork this to use on your projects.
 #### BETA RELEASE IS NOW AVALIABLE
 
 ##### BUGS
-- Firefox Version: The second section seems to have a image related bug. This is likely due to the sizing differences. 
+- Firefox Version: The second section seems to have a image related bug. This is likely due to the sizing issues. 
 This will be fixed on the next release.
 
 ##### Notices
