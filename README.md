@@ -1,5 +1,5 @@
 # Pizza Mania
-A single page pizza application.
+A single page pizza template. Feel free to fork this to use on your projects.
 
 ### Update
 - Version 1.0 is Officially Released!
@@ -8,7 +8,8 @@ A single page pizza application.
 #### BETA RELEASE IS NOW AVALIABLE
 
 ##### BUGS
-- None Currently Discovered At The Moment
+- Firefox Version: The second section seems to have a image related bug. This is likely due to the sizing issues. 
+This will be fixed on the next release.
 
 ##### Notices
 - The contact form doesn't send any api requests. At this time there is no plans to build the api
