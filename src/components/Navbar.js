@@ -40,7 +40,7 @@ class Navbar extends Component {
                 <span />
               </a>
               <div className={styles["navbar__mobile-img"]}>
-                <img src="../../public/images/pizza.png" alt="" />
+                <img src="./public/images/pizza.png" alt="pizza mania" />
               </div>
               <div
                 className={classnames({
@@ -79,7 +79,7 @@ class Navbar extends Component {
                 <img
                   className={styles["logo"]}
                   src="./public/images/pizza.png"
-                  alt="Pizza"
+                  alt="pizza mania"
                 />
               </div>
               <div className={styles["navbar__section-2"]}>

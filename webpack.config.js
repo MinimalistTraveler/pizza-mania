@@ -7,7 +7,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "build"),
     filename: "JS/[name].bundle.js",
-    publicPath: "./"
+    publicPath: "/"
   },
   devServer: {
     inline: true,
@@ -43,7 +43,7 @@ module.exports = {
           {
             loader: "file-loader",
             options: {
-              outputPath: "./public/images/"
+              publicPath: "./public/images/"
             }
           }
         ]
