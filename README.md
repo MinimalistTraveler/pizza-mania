@@ -1,5 +1,5 @@
 # Pizza Mania
-A single page pizza application.
+A single page pizza template. Feel free to fork this to use on your projects.
 
 ### Update
 - Version 1.0 is Officially Released!
